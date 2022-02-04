@@ -46,7 +46,7 @@ echo 192.168.$X.$n
 echo "^          |"
 echo "|          |"
 echo "|          |"
-timeout 1 arping -c 1 192.168.0.$n | cut -d" " -f4 | head -2
+timeout 2 arping -c 1 192.168.$X.$n | cut -d" " -f4 | head -2
 echo "___________"
 echo ""
 echo ""
